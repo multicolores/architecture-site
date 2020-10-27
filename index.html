@@ -1,0 +1,599 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Pesin Architecture & Design</title>
+  <link rel="stylesheet" href="css.css">
+  <link rel="shortcut icon" type="image/ico" href="photo/favicon_logo.ico"/>
+  <script src="https://unpkg.com/panzoom@8.7.3/dist/panzoom.min.js"></script>
+</head>
+
+
+<body id="body">
+
+
+  <!-- le simon pesin qui s'ecrit au debut  
+  <div class="accueil">
+    <p>Simon Pesin</p>
+  </div>
+-->
+<!--    section qui apparaît détaille de l'image -->
+    <section id="section" class="section_image">
+        <button onclick="toggle()"><i class="fas fa-times"></i></button>
+        <div class="image-description">
+          <h1>Console Rossi</h1></br>
+          <p>
+            Console Rossi L140 P50 H80 </br>- Marbre Carrare </br>- édition limitée de 12 
+          </br>- Autres finitions sur demande </br>- Sur commande
+
+          </p>
+        </div>
+        <div class="image-gallery">
+            <img src="photo/image1.jpg" alt="" class="image-active"/>
+            <img src="photo/image1_1.jpg" alt="" class="anim2"/>
+            <img src="photo/image1_2.jpg" alt="" class="anim2"/>
+          </div>
+        </div>
+      </section>
+
+      <section id="section1" class="section_image">
+        <button onclick="toggle1()"><i class="fas fa-times"></i></button>
+        <div class="image-description">
+          <h1>Guéridon Rossi</h1></br>
+          <p>
+            
+            Guéridon Rossi L80 P80 H51 </br>- Marbre Rojo Levantina </br>- édition limitée de 12 
+          </br>- Autres finitions sur demande </br>- Sur commande
+
+          </p>
+        </div>
+        <div class="image-gallery">
+          <img src="photo/2.jpg" alt="" class="image-active"/>
+          <img src="photo/2_1.jpg" alt="" class="anim2"/>
+          <img src="photo/2_2.jpg" alt="" class="anim2"/>
+        </div>
+      </section>
+
+      <section id="section2" class="section_image">
+        <button onclick="toggle2()"><i class="fas fa-times"></i></button>
+        <div class="image-description">
+          <h1>Piédestal Rossi</h1></br>
+          <p>
+            Piédestal Rossi L35 P35 H66 </br>- Marbre Nero Marquina</br>- édition limitée de 12 
+          </br>- Autres finitions sur demande </br>- Sur commande
+
+          </p>
+        </div>
+        <div class="image-gallery">
+          <img src="photo/3.jpg" alt="" class="image-active"/>
+          <img src="photo/3_1.jpg" alt="" class="anim2"/>
+          <img src="photo/3_2.jpg" alt="" class="anim2"/>
+        </div>
+      </section>
+
+      <!--images Pop Up-->
+<div class="Images_PopUp">
+  <img src="" alt="" class="full-img"/>
+  <p class="légende_fullImg"></p>
+</div>
+
+ <!--
+   <div class="preload">
+  <h1>Chargement de la page ...</h1>
+</div>-->     
+
+
+
+<div id="blur">
+    <header id="accueil">
+        <!---Menu --->
+        <nav class="nav vue nav_anim_main" id="nav">
+            <ul>
+                <li><a href="index.html" class="nav_a Simon">Simon Pesin</a></li>
+                <li class="design"><a href="#Console_Rossi" class="nav_a">Design</a>
+                    <div class="div_Design">
+                        <ul>Collection Rossi
+                            <li><a href="#Console_Rossi">Console Rossi</a></li>
+                            <li><a href="#Console_Rossi">Guéridon Rossi</a></li>
+                            <li><a href="#Guéridon_Rossi">Piédestal Rossi</a></li>                       
+                        </ul>
+                    </div>
+                </li>
+                <li class="exemple"><a href="#architecture" class="nav_a">Architecture</a>
+                    <div class="div_exemple">
+                      <ul>
+                        <li><a href="#Piédestal_Rossi">Appartement Caulaincourt</a></li>
+                        <li><a href="#architecture">Appartement Shanghaï I</a></li>  
+                        <li><a href="#shanghai1">Appartement Shanghaï II</a></li>                   
+                    </ul>
+                    </div>
+                </li>
+                <li><a href="#kujten" class="nav_a">Kujten</a>
+                  <div class="div_architecture">
+                    <ul>
+                      <li></li>
+                      <li></li>                        
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>                        
+                        
+                    </ul>
+                    </div>
+              </li>  
+                <li class="apropos_menu"><a href="a_propos.html" class="nav_a ">A propos</a>
+                  <div class="div_Design apropos">
+                    <ul>
+                      <li><a href="a_propos.html">Biographie</a></li>
+                      <li><a href="a_propos.html#competences">Compétences</a></li>
+                      <li><a href="a_propos.html#competences">Contact</a></li>                       
+                    </ul>
+                  </div>
+                </li>
+
+
+                <li class="contact_menue">
+                  <a href="mailto:contact@simonpesin.com" > <i class="far fa-envelope"></i> </a>
+                  <a href="http://instagram.com/simonpesin" target="_blank" dmle_dont_remove="target" dm_dont_rewrite_url="true"> <i class="fab fa-instagram"></i> </a> 
+                  <a href="https://www.linkedin.com/in/simon-pesin-5706351a/" target="_blank" dmle_dont_remove="target" dm_dont_rewrite_url="true"> <i class="fab fa-linkedin-in"></i> </a>
+                </li>          
+            </ul>
+        </nav>
+
+        <!--
+        <h1>Simon Pesin</h1>
+        <p>Architecture</p><p>Design </p>
+
+
+        <div class="icon_scroll_down">
+          <a href="#biographie">
+          <i class="fas fa-long-arrow-alt-down" id="icon_scroll"></i>
+          </a>
+        </div>
+      -->
+
+ <!--          pour le responsive
+        <nav class="nav_invisible" id="nav_invi">
+          <ul>
+                  <li class="logo"><i class="fas fa-times" onclick="
+                      document.getElementById('nav_invi').className = 'nav_invisible nav_close';
+                  "></i></li>
+              <li><a href="#Biographie" class="nav_a">Biographie</a></li>
+              <li><a href="#passions" class="nav_a">Passions</a></li> -->             
+             <!-- <li class="logo"><a href="#accueil"> <i class="fas fa-leaf"></i></a></li>  -->
+             <!--
+              <li><a href="#compétences" class="nav_a">Compétences</a></li>
+              <li><a href="#portfolio" class="nav_a">Portfolio</a></li>
+              <li><a href="#contact" class="nav_a">Contact</a></li>
+          </ul>
+      </nav>  
+
+    -->  <!-- 
+    <div class="horizontal-scroll-wrapper squares">
+        <div class="div_1">item 1</div>
+        <div class="div_2">item 2</div>
+        <div class="div_3">item 3</div>
+        <div class="div_4">item 4</div>
+        <div class="div_5">item 5</div>
+        <div class="div_6">item 6</div>
+        <div class="div_7">item 7</div>
+        <div class="div_8">item 8</div>
+      </div>--> 
+
+      <div id="container">
+        <div id="container2">
+          <div class="box one description_main_anim">
+            <img src="photo/image1.jpg" id="Console_Rossi" onclick="toggle()" ><p class="legende_image">Console Rossi</p>
+          </div>
+          <div class="box two description_main_anim"><img src="photo/2.jpg" id="Guéridon_Rossi" onclick="toggle1()"><p class="legende_image">Guéridon Rossi</p></div>
+          <div class="box three description_main_anim"><img src="photo/3.jpg" id="Piédestal_Rossi" onclick="toggle2()"><p class="legende_image">Piédestal Rossi</p></div>
+          <div class="box four description_main_anim"><img src="photo/plan1.jpg" alt="Appartement Caulaincourt" data-original="photo/plan1.jpg" id="architecture"> <p class="legende_image">Appartement Caulaincourt</p></div>
+          <div class="box five description_main_anim"><img src="photo/plan2.jpg" alt="Appartement Shanghaï I" data-original="photo/plan2.jpg" id="shanghai1"> <p class="legende_image">Appartement Shanghaï I</p></div>
+          <div class="box six description_main_anim"><img src="photo/plan3.jpg" alt="Appartement Shanghaï II" data-original="photo/plan3.jpg" id="shanghai2"><p class="legende_image">Appartement Shanghaï II</p></div>
+          <div class="box seven"></div>
+          <div class="box eight description_main_anim"><img src="photo/kujten.jpg" alt="Kujten" data-original="photo/kujten.jpg" id="kujten"></div>
+          <div class="box seven"></div>
+          <div class="box eight eight2 description_main_anim"><img src="photo/vueprincipale1.jpg" alt="Kujten" data-original="photo/vueprincipale1.jpg"></div>
+          <div class="box seven "></div>
+          <div class="box nine description_main_anim"><img src="photo/vueprincipale2.jpg" alt="Kujten" data-original="photo/vueprincipale2.jpg"></div>
+          <div class="box seven"></div>
+          <div class="box ten description_main_anim"><img src="photo/vueprincipale3.jpg" alt="Kujten" data-original="photo/vueprincipale3.jpg"></div>
+          <div class="box seven"></div>
+          <div class="box eleven description_main_anim"><img src="photo/vueprincipale4.jpg" alt="Kujten" data-original="photo/vueprincipale4.jpg"></div>
+          <div class="box seven"></div>
+          <div class="box twelve description_main_anim"><img src="photo/table.jpg" alt="Kujten" data-original="photo/table.jpg"></div>
+          <div class="box seven"></div>
+          <div class="box twelve description_main_anim"><img src="photo/table2.jpg" alt="Kujten" data-original="photo/table2.jpg"></div>
+          <div class="box seven"></div>
+          <div class="box twelve description_main_anim"><img src="photo/detaille.jpg" alt="Kujten" data-original="photo/detaille.jpg"></div>
+          <div class="box seven"></div>
+          <div class="box twelve description_main_anim"><img src="photo/detaille2.jpg" alt="Kujten" data-original="photo/detaille2.jpg"></div>
+        </div>
+      </div>
+      <div class="contact_div">
+        <p class="contact tel fin">Tél. : +33 6 25 13 68 71  // E-Mail : contact@simonpesin.com  // Copyright © Tous droits réservés.</p>
+      </div>
+  </header>   
+
+
+
+
+ <!--Biographie simon
+
+  <section class="section_simon" id="biographie">
+
+    <div class="simon-description">
+      
+      <div class="simon-description-text">
+        <h1>Biographie</h1>
+
+      </br>
+        <p class="anim2">Diplômé en architecture à l’École Spéciale d’Architecture, Simon Pesin débute sa carrière chez Christian 
+          de Portzampac avant de compléter sa 
+          formation en obtenant l’Habilitation à la Maitrise d’Oeuvre en son Nom Propre.</p>
+        <p class="anim2">Simon Pesin collabore ensuite avec des grands noms de l'architecture d'intérieur comme Jean-Louis Deniot et Gilles & Boissier. 
+          Il conçoit de nombreux projets, allant de la création de mobilier en passant par la conception d’architecture intérieure comme notamment 
+          le réaménagement d’un immeuble mythique à New York ou une maison de plus de 2000 mètres carrés à Moscou.</p>
+        
+        <p class="anim2">Stimulé par ses expériences dans le luxe, Simon Pesin développe son studio à Paris dédié à l’architecture d’intérieure et au design. Simon Pesin place 
+          toujours l’utilisateur au centre de sa démarche qu’il allie à une maîtrise des détails et des 
+          savoir-faire pour aboutir à un projet sur-mesure, personnel et emprunt d’une touche singulière.</p>
+        <p id="fin_paragraphe" class="anim2">Il tire son inspiration autant dans son quotidien que dans ses voyages ou dans la lecture pour obtenir un univers contemporain à la fois sophistiqué et brutaliste, 
+          confortable et doux mettant en forme des univers uniques et stimulants pour tous les sens. </p>
+      </div>
+    </div>
+    <div class="simon-gallery">
+      <img src="photo/Portrait_simon.jpg" alt="Portrait_simon"/>
+    </div>
+
+    <div class="icon_scroll_down3">
+      <a href="#competences">
+      <i class="fas fa-long-arrow-alt-down" id="icon_scroll"></i>
+      </a>
+    </div>
+  </section>
+
+
+
+
+
+
+    <div class="competences anim3" id="competences">
+
+      <div class="competences_titre">
+        <div class="competences_logo">
+          <i class="fas fa-pencil-ruler" id="icon_scroll"></i>
+        </div>
+        <div class="competences_logo">
+          <h1>Les Compétences</h1>
+        </div>
+        <div class="competences_logo">
+          <i class="fas fa-ruler" id="icon_scroll"></i>
+        </div>
+      </div>
+
+      <div class="competences_skill">
+        <div class="skill anim"><h2>Architecture intérieure</h2></div>
+        <div class="skill anim"><h2>Retail design / architecture commerciale</h2></div>
+        <div class="skill anim"><h2>Direction artistique</h2></div>
+        <div class="skill anim"><h2>Scénographie</h2></div>
+        <div class="skill anim"><h2>Dessin de mobilier</h2></div>
+        <div class="skill anim"><h2>Graphisme</h2></div>
+        <div class="skill anim"><h2>Identité de marque</h2></div>
+      </div>
+    </div>   
+  
+
+    <div class="contact">
+      <h1> contact</h1>
+    </div>
+
+  -->
+  <div class="image_project_draggable_phone">
+    <div class="container_responsive">
+        <div class="row">
+
+            <div class="block block-1"> <img src="photo/image1.jpg" id="Console_Rossi"><p class="legende_image">Console Rossi</p></div>
+            <div class="block block-1"><img src="photo/2.jpg" id="Guéridon_Rossi"><p class="legende_image">Guéridon Rossi</p></div>
+            <div class="block block-2"> <img src="photo/3.jpg" id="Piédestal_Rossi"   ><p class="legende_image">Piédestal Rossi</p></div>
+            <div class="block block-4"> <img src="photo/plan1.jpg" id="architecture">  <p class="legende_image">Appartement Caulaincourt</p></div>
+            <div class="block block-5"> <img src="photo/plan2.jpg" id="shanghai1">     <p class="legende_image">Appartement Shanghaï I</p></div>
+            <div class="block block-6"> <img src="photo/plan3.jpg" id="shanghai2">     <p class="legende_image">Appartement Shanghaï II</p></div>
+            <div class="block block-1"> <img src="photo/kujten.jpg" id="kujten"></div>
+            <div class="block block-2"> <img src="photo/vueprincipale1.jpg"></div>
+            <div class="block block-3"> <img src="photo/vueprincipale2.jpg"></div>
+            <div class="block block-4"> <img src="photo/vueprincipale3.jpg"></div>
+            <div class="block block-5"> <img src="photo/vueprincipale4.jpg"></div>
+            <div class="block block-6"> <img src="photo/table.jpg"></div>
+            <div class="block block-1"> <img src="photo/table2.jpg"></div>
+            <div class="block block-2"> <img src="photo/detaille.jpg"></div>
+            <div class="block block-3"><img src="photo/detaille2.jpg"></div>
+         </div>
+  </div>
+</div>
+
+
+</body>
+<script>
+
+
+/*
+function imageGallery(){
+  const highlight = document.querySelector(".gallery-highlight");
+  const previews = document.querySelectorAll(".image-preview img");
+
+  previews.forEach(preview => {
+    preview.addEventListener("click" , function() {
+      const smallSrc = this.src;
+      const bigSrc = smallSrc.replace("small", "big");
+      highlight.src = bigSrc;
+      previews.forEach(preview => preview.classList.remove('image-active'));
+      preview.classList.add("image-active");
+    })
+  })
+}
+
+imageGallery();
+*/
+
+function toggle(){
+    var popup = document.getElementById("section");
+    popup.classList.toggle('section_active');
+
+    var blur = document.getElementById("blur");
+    blur.classList.toggle('blur_active');
+
+    Images_PopUp.classList.remove("open");
+    full_img.classList.remove("open");
+}
+function toggle1(){
+    var popup = document.getElementById("section1");
+    popup.classList.toggle('section_active');
+
+    var blur = document.getElementById("blur");
+    blur.classList.toggle('blur_active');
+
+    Images_PopUp.classList.remove("open");
+    full_img.classList.remove("open");
+}
+
+function toggle2(){
+    var popup = document.getElementById("section2");
+    popup.classList.toggle('section_active');
+
+    var blur = document.getElementById("blur");
+    blur.classList.toggle('blur_active');
+
+    Images_PopUp.classList.remove("open");
+    full_img.classList.remove("open");
+}
+
+
+
+// images Pop Up
+const Images_PopUp = document.querySelector(".Images_PopUp");
+const previews = document.querySelectorAll("#container2 .box img");
+const full_img = document.querySelector(".full-img");
+const caption = document.querySelector(".légende_fullImg");
+
+previews.forEach((preview) => {
+  preview.addEventListener("click", () => {
+    Images_PopUp.classList.add("open");
+    full_img.classList.add("open");
+    //dynamic change of p and img
+    const originalSrc = preview.getAttribute("data-original");
+    full_img.src = originalSrc;
+    const altText = preview.alt;
+    caption.textContent = altText;
+  });
+});
+
+Images_PopUp.addEventListener("click", (e) => {
+  if (e.target.classList.contains("Images_PopUp")) {
+    Images_PopUp.classList.remove("open");
+    full_img.classList.remove("open");
+  }
+  if (e.target.classList.contains("section_image")) {
+    Images_PopUp.classList.remove("open");
+    full_img.classList.remove("open");
+  }
+  // on click nimporte où sur Images_PopUp
+  Images_PopUp.classList.remove("open");
+  full_img.classList.remove("open");
+  // if aussi si on click sur le truc des 3 première images 
+});
+
+
+
+//animation on scroll 
+
+
+const images = document.querySelectorAll('.anim');
+const images2 = document.querySelectorAll('.anim2');
+const images3 = document.querySelectorAll('.anim3');
+const background = document.querySelectorAll('.competences');
+
+observer = new IntersectionObserver((entries) =>{
+
+entries.forEach(entry => {
+    if(entry.intersectionRatio > 0) {
+        entry.target.style.animation = `anim1 1.5s forwards ease-out`;
+
+    }
+    else{
+        entry.target.style.animation = 'none';
+     }
+})
+})
+
+images.forEach(image => {
+    observer.observe(image)
+    })
+
+
+
+
+observer2 = new IntersectionObserver((entries) =>{
+
+entries.forEach(entry => {
+    if(entry.intersectionRatio > 0) {
+        entry.target.style.animation = `anim2 1.5s infinite ease-out`;
+
+    }
+    else{
+        entry.target.style.animation = 'none';
+    }
+})
+})
+
+images2.forEach(image => {
+    observer2.observe(image)
+    })
+
+    observer3 = new IntersectionObserver((entries) =>{
+
+entries.forEach(entry => {
+    if(entry.intersectionRatio > 0) {
+        entry.target.style.animation = `anim3 1s forwards ease-out`;
+
+    }
+    else{
+        entry.target.style.animation = 'none';
+    }
+})
+})  
+
+images3.forEach(image => {
+    observer3.observe(image)
+    })
+
+
+observer_background = new IntersectionObserver((entries) =>{
+
+entries.forEach(entry => {
+    if(entry.intersectionRatio > 0) {
+      document.getElementById("body").style.backgroundColor = '#333';
+
+    }
+    else{
+      document.getElementById("body").style.backgroundColor = 'white';
+    }
+})
+})
+
+background.forEach(image => {
+  observer_background.observe(image)
+    })
+
+
+
+
+
+/* preloader  
+
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".preload");
+  preload.classList.add("preload-finish");
+});
+*/
+
+
+
+/*----Curseur-----*/
+  document.body.style.cursor = "none";
+
+  var cursor = document.createElement("div");
+  cursor.classList.add("cursor");
+  document.body.appendChild(cursor);
+
+  var follow = document.createElement("div");
+  follow.classList.add("follow");
+  document.body.appendChild(follow);
+
+  function move(obj, event) {
+    obj.style = "";
+    obj.style.top = event.clientY + "px";
+    obj.style.left = event.clientX + "px";
+  }
+
+  if(cursor){
+    window.addEventListener("mousemove", function(event) {
+      var e = event;
+      var t = e.target;
+      var f = follow;
+      var c = cursor;
+
+      if(t.tagName == "IMG"){
+        c.style.backgroundColor = "transparent";
+
+        f.classList.add("on-focus");
+        c.classList.add("c-focus");
+
+        move(c, e);
+        move(f, e);
+      } else {
+        move(c, e);
+        move(f, e);
+        f.classList.remove("on-focus");
+        c.classList.remove("c-focus");
+
+      }
+      
+      if(t.tagName == "NAV" || t.tagName == "A" || t.tagName == "UL" || t.tagName == "LI" || t.tagName == "I" ){
+        f.style.backgroundColor = "transparent";
+
+        f.classList.add("on-focus_nav");
+
+        move(c, e);
+        move(f, e);
+      } else {
+        move(c, e);
+        move(f, e);
+        f.classList.remove("on-focus_nav");
+
+      }
+    });
+  }
+
+
+
+/*    conteur   *//*
+const updateCounter = async () => {
+const data = await fetch('https://api.countapi.xyz/hit/site-Simon-counter/visits')
+const count = await data.json()
+console.log("Le site a été visité",count.value, "fois");
+}
+updateCounter(); */
+
+
+
+
+/* draggable image sur le responsive */
+
+/* on vérifie si on est sur tel ( car sinon c'est pas compatible ) */
+
+var mq = window.matchMedia("screen and (min-width: 1000px)");
+mq.addListener(WidthChange);
+WidthChange(mq);
+
+function WidthChange(mq) {
+if (mq.matches) {
+ console.log('not match');
+}
+else{
+  console.log('ca match');
+var element = document.querySelector(".image_project_draggable_phone");
+panzoom(element, {
+    minZoom: 1,
+    maxZoom: 1
+});
+}
+}
+</script>
+</html>
